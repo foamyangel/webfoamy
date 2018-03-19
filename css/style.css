@@ -1,0 +1,495 @@
+#contenedor{
+	width: 1000px;
+	height: auto;
+	margin: auto;
+	position: relative;
+
+
+}
+
+
+body{
+	
+	/*background-image: url(../img/color.jpg);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;*/
+
+    
+}
+
+hr {
+    height: 3px;
+    border: 0;
+    background-color: gray;
+}
+
+#fondo3{
+ background-image: url(../img/fondoMsg.jpg);
+ background-repeat: no-repeat, repeat;
+ margin: 0px auto;
+ width: 450px;
+ height: 520px;
+ border-radius: 10px;
+ margin-top: 50px;
+}
+ .fondo4{
+ 
+ background color: #888;
+ background-repeat: no-repeat, repeat;
+ width: 450px;
+ margin: 0px auto;
+ height:auto;
+ 
+}
+
+ .fondo5{
+ 
+
+ background-image: url(../img/color.jpg);
+ width: 97%;
+ margin: 0px;
+ margin-left: 15px;
+ height:auto;
+ padding:100px;
+ 
+ 
+ 
+}
+
+ .conteB{
+ 
+
+width:1125px;
+
+background-image: url(../img/ocean5.jpg);
+background-repeat: no-repeat, repeat;
+
+margin-top:20px;
+margin-left: 50px;
+height:720px;
+
+border-radius: 10px;
+ 
+ 
+ 
+}
+
+
+
+ .conteB1{
+ 
+
+width: 100%;
+background: rgba(0, 104, 255, 0.3);
+background-repeat: no-repeat, repeat;
+margin: 0px;
+margin-left: 0px;
+padding-top:0;
+padding: 50px;
+height:720px;
+ 
+ 
+ 
+}
+
+
+ .fondo6{
+ 
+
+
+ width: 97%;
+ margin: 0px auto;
+ height:auto;
+ position:relative;
+
+ 
+}
+form{
+   background: rgba(0,0,0,.8);
+   box-sizing: border-box;
+   width: 450px;
+   height:520px;
+   margin-top: 420px;
+   padding-top: 15px;
+   margin: 0px auto;
+   border-radius: 10px;
+   padding-bottom: 20px;
+   box-sizing: border-box;
+   padding: 12px;
+}
+
+.main {
+     width:90%
+     max-width:1000px
+     margin:20PX auto;
+
+
+}
+
+
+section{
+
+
+}  
+
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-family: sans-serif;
+
+}
+
+
+h2{
+    font-family: 'Amaranth', sans-serif;
+	color: #3C4041;
+	margin-left: 15px;
+	font-size: 25px;
+	text-align: center;
+	
+	margin-bottom: 20px;
+    padding: auto;
+}
+
+h3{
+	font-family: Comic;
+	color: #888;
+	margin-left: 25px;
+	font-size: 25px;
+	text-align: left;
+}
+
+h4{
+	font-family: 'Berkshire Swash', cursive;
+	color: #3C4041;
+    margin: 25px; 
+	margin-top: 15px;
+	
+	font-size: 15px;
+	
+	position: center;
+	
+}
+
+
+h5{
+	font-family: 'Berkshire Swash', cursive;
+	color: #3C4041;
+    margin: 25px; 
+	margin-top: 15px;
+	
+	font-size: 20px;
+	
+	position: center;
+}
+
+
+/*h6{
+	
+	
+	font-family:verdana;
+	color: #888;
+	margin-left: 10px; 
+	margin-top: 7px;
+	line-height:1em;
+	font-size: 15px;
+	position: center;
+}*/
+
+
+/*;
+	margin-left: 10px; 
+	margin-top: 15px;
+	font-size: 25px;
+	text-aling: center;
+}*/
+
+header{
+
+	width: 1000px;
+	height: auto;
+	
+}
+
+
+
+
+
+/*nav{
+
+	width: 97%;
+	height: 0px;
+	background: #2561D3;
+	border: solid;
+	border-color: #004669;
+	border-radius-left: 10px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	margin-left: 25px;
+    
+    z-index: 10;
+}*/
+
+
+nav {
+
+	display: table;
+	margin: auto;
+	margin-left: 20px;
+	padding-left: 50px;
+	margin-top: 0px;
+	background:#000000;
+	height:70px;
+	z-index:102;
+	width:97%;
+}
+
+ul{
+
+	margin: auto;
+	padding-top: 0px;
+	margin-left: 0px;
+}
+
+li{
+
+	float: left;
+	list-style-type: none;
+	margin-left: 70px;
+	padding: 10px;
+	margin: 0px;
+
+}
+
+
+a{
+	text-decoration: none;
+	font-size: 33px;
+	color: #004669;
+
+}
+
+
+
+
+aside{
+	width: 280px;
+	background: rgba(0,0,0,.6); 
+	height: 600px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+footer{
+	width: 97%;
+	height: 200px;
+	background: rgba(0,0,0,.6); 
+	/*float: left;*/
+	margin-top: 10px;
+	margin-left: 15px;
+	border-radius: 10px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 7px;
+
+}
+
+
+
+p{
+	font-size: 50px;
+	font-weight: bolder;
+	font-family:verdana
+	line-height: 24px;
+	color: #666;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: center;
+} 
+
+
+
+
+#inferior {
+
+	
+	width: 97%;
+	height: 220px;
+	padding: 30px;
+	background: rgba(0,0,0,.6);
+	margin-left: 15px;
+	
+	/*background-image: url(C:/Users/Andres/Documents/Sinfo/img/633.jpg);*/
+    float: left;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+
+}
+
+#DERO {
+
+	
+	width: 25%;
+	height: 200px;
+	background-image: url(../img/LOGDECO.png);
+    float: left;
+    background-repeat: no-repeat;
+
+ }
+
+#conte{
+	width: 100%;
+	height: auto;
+	margin-left: 0px; 
+	background-color: #ffffff;
+
+
+}
+.bienvenidos1{
+	width: 97%;
+	height: auto;
+	padding:5px;
+	margin-top: 15px;
+	margin-left: 15px;
+	text-align: center;
+	border-radius: 10px;
+	background:rgba(0,0,0,.8);
+	box-sizing: border-box;
+	
+
+}
+
+
+label{
+   margin-left: 10px;
+   width: 80%;
+   height: 0px;
+   
+
+
+}
+
+
+
+
+input, textarea{
+  
+  
+  width: 240px;
+  height: 30px;
+  margin-bottom: 0px;
+  padding: 15px;
+  box-sizing: border-box;
+
+}
+
+/*textarea {
+
+  min-height:100px; 
+  min-width:350px;
+  max-width: 100%;
+ 
+}*/
+
+
+#momi{
+    width: 120px;
+	height: 50px;
+	background: #444;
+	position: center;
+	margin-top: 140px;
+	margin-left: 600px;
+	border-radius: 10px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	/*position: fixed;*/
+} 
+
+#boton{
+  background: #0174DF;
+  color:#fff;
+  padding:20px;
+  z-index: 50;
+  width: 100px;
+  height: 35px;
+
+
+}
+
+#boton:hover{
+  cursor:pointer;
+  background: #08298A;
+  z-index: 50;
+  width: 100px;
+  height: 35px;
+
+  
+}
+#colorNav{
+
+  background: #000000;
+  color:#fff;
+  z-index: 50;
+  width: 97%;
+  height: 70px;
+
+}
+
+
+
+	
+ ul{
+
+	margin: auto;
+	padding-top: 0px;
+	display: inline;
+	margin-left:35px; 
+}
+
+li{
+
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+	margin: 0px;
+	margin-left:45px; 
+
+}
+ 
+
+a{  font-family:verdana;
+	text-decoration: none;
+	font-size: 33px;
+	color: #ffffff;}
+
+#fottext { 
+
+	background: transparent;
+	text-decoration: none;
+	font-size: 33px;
+	width: 35%;
+	color: #444;
+	float: left;
+	font-family: 'Princess Sofia', cursive;
+
+}
+
+
+
+@media screen and (min-width: 480px){
+	.fondo4 {
+	width: 100%;
+	}
+}
+
+
+@media scroll-behavior: 
+

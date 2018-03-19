@@ -1,0 +1,94 @@
+
+#concha{
+height:600px;
+width: 60%;
+background-color:transparent;
+margin: 250px;
+margin-top: 50px;
+}
+
+#int{
+height: 80px;
+width: 98%;
+background-color:transparent;
+margin-top: 10px;
+size:8px; 
+
+
+}
+
+#int2{
+height: 70px;
+width: 120px;
+background-color:black;
+margin-top: 80px;
+margin-left:120px; 
+display: none;
+position: fixed;
+font-family: 'Lobster', cursive;
+font-size: 25px;
+color: #FA58F4;
+padding: 20px;
+border-radius: 10px;
+
+
+}
+
+#int2:hover{
+height: 70px;
+width: 120px;
+background-color:#31384A;
+margin-top: 80px;
+margin-left:120px; 
+display: none;
+position: fixed;
+font-family: 'Lobster', cursive;
+font-size: 25px;
+color: #FA58F4;
+padding: 20px;
+border-radius: 10px;
+
+
+}
+
+
+h5{
+
+font-family: 'Lobster', cursive;
+font-size: 15px;
+color: #FA58F4;
+height: 40px;
+width: 98%;
+
+
+
+}
+h1{
+
+font-family: 'Lobster', cursive;
+font-size: 25px;
+color: #FA58F4;
+
+
+
+
+}
+
+
+/*h5{
+	font-family:verdana;
+	color: #777;
+    margin: 25px; 
+	margin-top: 15px;
+	font-size: 10px;
+	position: center;
+}*/
+
+#box{
+    width: 200px;
+    height: 110px;
+    background: rgba(0,0,0,.8);
+    display: block;
+    border-radius: 5px;
+    padding:10px; 
+}

@@ -1,0 +1,93 @@
+
+	
+
+
+
+
+label{
+   margin-left: 10px;
+   width: 80%;
+   height: 20px;
+   
+
+
+}
+
+#formulario{
+
+
+	 padding-top:500PX;
+	 padding:300px;
+	 background: 
+
+}
+
+
+input, textarea{
+  
+  
+  width: 120px;
+  height: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+
+}
+
+
+
+}
+
+#boton:hover{
+  cursor:pointer;
+  background: #31387A;
+   z-index: 50;
+  
+}
+#boton{
+  background: #ffffff;
+  color:#fff;
+  padding:20px;
+  z-index: 50;
+}
+
+#boton:hover{
+  cursor:pointer;
+  background: #31387A;
+  z-index: 50;
+}
+
+	
+ ul{
+
+	margin: auto;
+	padding-top: 0px;
+	display: inline;
+}
+
+li{
+
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+	margin: 0px;
+
+}
+
+
+a{  font-family:verdana;
+	text-decoration: none;
+	font-size: 33px;
+	color: #ffffff;
+
+
+
+@media screen and (min-width: 480px){
+	.fondo4 {
+	width: 100%;
+	}
+}
+
+
+@media scroll-behavior: 
+

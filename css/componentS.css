@@ -1,0 +1,613 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/*body {
+	background-image:url(../img/cine.png);;
+	font-family: 'Lato', Arial, sans-serif;
+	color: #fff;*/
+}
+
+.wrapper {
+	margin: 0 auto 100px auto;
+	max-width: 960px;
+}
+
+.stage {
+	list-style: none;
+	padding: 0;
+}
+
+/*************************************
+Build the scene and rotate on hover
+**************************************/
+
+.scene {
+	width: 260px;
+	height: 400px;
+	margin: 30px;
+	float: left;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.movie {
+	width: 260px;
+	height: 400px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-130px);
+	-moz-transform: translateZ(-130px);
+	transform: translateZ(-130px);
+	-webkit-transition: -webkit-transform 350ms;
+	-moz-transition: -moz-transform 350ms;
+	transition: transform 350ms;
+}
+
+.movie:hover {
+	-webkit-transform: rotateY(-78deg) translateZ(20px);
+	-moz-transform: rotateY(-78deg) translateZ(20px);
+	transform: rotateY(-78deg) translateZ(20px);
+}
+
+/*************************************
+Transform and style the two planes
+**************************************/
+
+.movie .poster, 
+.movie .info {
+	position: absolute;
+	width: 260px;
+	height: 400px;
+	background-color: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.movie .poster  {
+	-webkit-transform: translateZ(130px);
+	-moz-transform: translateZ(130px);
+	transform: translateZ(130px);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.movie .info {
+	-webkit-transform: rotateY(90deg) translateZ(130px);
+	-moz-transform: rotateY(90deg) translateZ(130px);
+	transform: rotateY(90deg) translateZ(130px);
+	border: 1px solid #B8B5B5;
+	font-size: 0.75em;
+}
+
+.movie .info1 {
+	-webkit-transform: rotateY(90deg) translateZ(130px);
+	-moz-transform: rotateY(90deg) translateZ(130px);
+	transform: rotateY(90deg) translateZ(130px);
+	border: 1px solid #B8B5B5;
+	font-size: 0.75em;
+}
+.movie .info2 {
+	-webkit-transform: rotateY(90deg) translateZ(130px);
+	-moz-transform: rotateY(90deg) translateZ(130px);
+	transform: rotateY(90deg) translateZ(130px);
+	border: 1px solid #B8B5B5;
+	font-size: 0.75em;
+}
+/*************************************
+Shadow beneath the 3D object
+**************************************/
+
+.csstransforms3d .movie::after {
+	content: '';
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	bottom: 0;
+	box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-transform: rotateX(90deg) translateY(130px);
+	-moz-transform: rotateX(90deg) translateY(130px);
+	transform: rotateX(90deg) translateY(130px);
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+
+.csstransforms3d .movie:hover::after {
+	box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
+}
+
+/*************************************
+Movie information
+**************************************/
+
+.info header {
+	color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+	height: 195px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+
+.info header h1 {
+	margin: 0 0 2px;
+	font-size: 1.4em;
+}
+
+.info header .rating {
+	border: 1px solid #FFF;
+	padding: 0px 3px;
+}
+
+.info p {
+	padding: 1.2em 1.4em;
+	margin: 2px 0 0;
+	font-weight: 1000;
+	color: #688;
+	line-height: 1.4em;
+	border-top: 10px solid #555;
+
+
+}
+
+.info header {
+	color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+	height: 195px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+
+.poster header h1 {
+	margin: 0 0 2px;
+	font-size: 1.4em;
+}
+
+.poster header .rating {
+	border: 1px solid #FFF;
+	padding: 0px 3px;
+}
+
+.poster p {
+	padding: 1.2em 1.4em;
+	margin: 2px 0 0;
+	font-weight: 200;
+	color: #688;
+	line-height: 1.4em;
+	font-size: 1.5em
+	border-top: 10px solid #555;
+
+
+}
+
+.poster header {
+	color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+	height: 195px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+	}
+
+    
+  .info1  {
+	color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+	height: 400px;
+	width: 250px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+
+.info2  {
+	color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+	height: 400px;
+	width: 250px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+
+h5{
+	font-family:verdana;
+	color: #777;
+    margin: 25px; 
+	margin-top: 15px;
+	
+	font-size: 20px;
+	
+	position: center;
+}
+	
+
+/*************************************
+Generate "lighting" using box shadows
+**************************************/
+/*
+.movie .poster,
+.movie .info,
+.movie .info header {
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+*/
+.csstransforms3d .movie .poster {
+	box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
+}
+
+.csstransforms3d .movie:hover .poster {
+	box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+}
+
+.csstransforms3d .movie .info, 
+.csstransforms3d .movie .info header {
+	box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
+}
+/*
+.csstransforms3d .movie:hover .info, 
+.csstransforms3d .movie:hover .info header {
+	box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
+}
+
+/*************************************
+Posters and still images
+**************************************/
+
+.scene:nth-child(1) .movie .poster  {
+  background-image: url(../img/ALVIN.jpg);
+}
+
+.scene:nth-child(2) .movie .poster  {
+  background-image: url(../img/club.jpg);
+}
+
+
+.scene:nth-child(3) .movie .poster  {
+  background-color: #000;
+  background-image: url(../img/grinch.jpg);
+}
+.scene:nth-child(4) .poster header  {
+  background-color: #000;
+  background-image: url(../img/2.jpg);
+  !important
+}
+.scene:nth-child(5) .poster  {
+  background-color: #000;
+  background-image: url(../img/AAA.jpg);
+  !important
+ }
+
+ .scene:nth-child(6) .poster header {
+	background-color: #000;
+	background-image: url(../img/tabogo.png);
+}
+
+.scene:nth-child(1) .info1 {
+	background-image: url(../img/CALVIN.jpg);
+	background-color: #000;
+}
+
+.scene:nth-child(2) .info1 {
+	background-image: url(../img/orton.jpg);
+	background-color: #000;
+}
+
+.scene:nth-child(3) .info1 {
+	background-color: #000;
+	background-image: url(../img/spm.jpg );
+	
+}
+
+.scene:nth-child(4) .info header {
+	background-image: url(../img/R1.jpg);
+}
+.scene:nth-child(5) .info1  {
+	background-color: #000;
+	background-image: url(../img/800.jpg );
+	
+}
+
+.scene:nth-child(6) .info header {
+	background-color: #000;
+	background-image: url(../img/tabogoq.jpg);
+
+} 
+
+.bienvenidos{
+    width: 97%;
+	height: auto;
+	background-color:#A9E5F8;
+	margin-top: 30px;
+	padding:10px;
+	margin-left:20px; 
+	text-align: center;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.bienvenidos1{
+	width: 97%;
+	height: auto;
+	padding:25px;
+	margin:10px;
+	text-align: center;
+	border-radius: 10px;
+	background:rgba(0,0,0,.8);
+
+}
+
+
+.C-columnas2{
+	
+	margin:0px;
+	width:100%;
+	height:880px;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 10px;
+	padding: 35px;
+	background: rgba(184, 150, 227, 0.5);
+	}
+
+
+.bienvenidos2{
+	width: 97%;
+	height: auto;
+	padding:25px;
+	margin:10px;
+	margin-top:45px;
+	text-align: center;
+	border-radius: 10px;
+	background:rgba(179,220,237,.8);
+}
+
+.bienvenidos3{
+	width: 97%;
+	height: auto;
+	padding:0px;
+	margin: 0px auto;
+	margin-top:0px;
+	text-align: center;
+	border-radius: 10px;
+	background:transparent;
+}
+
+#conte{
+	width: 100%;
+	height:auto;
+	border-radius: 10px;
+	background-color: #ffffff;
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/f-b2XwJCjq4" frameborder="0" allowfullscreen></iframe>
+}
+
+#conte{
+	width: 100%;
+	margin-left: 5px;
+	padding-left: 5px;
+	height:auto;
+	border-radius: 10px;
+	background-color: #ffffff;}
+
+#conte1{
+	width: 20%;
+	margin-left: 5px;
+	height:auto;
+	border-radius: 10px;
+	background-color: #ffffff;}
+
+#conte2{
+	width: 20%;
+	margin-left: 65px;
+	height:auto;
+	border-radius: 10px;
+	background-color: #ffffff;}
+
+
+/*nav{
+	display: table;
+	margin: auto;
+	margin-left: 15px;
+	padding-left: 50px;
+	margin-top: 0px;
+	background:#440250;
+	height: 40px;
+	z-index: 100;
+	width:97%;*/
+}
+
+	nav:hover{
+	display: table;
+	margin: auto;
+	margin-left: 15px;
+	padding-left: 50px;
+	margin-top: 0px;
+	background:#0C0243;
+	height: 40px;
+	z-index: 100;
+	width:97%;
+}
+
+#conte1{
+	width: 20%;
+	margin-left: 5px;
+	height:auto;
+	border-radius: 10px;
+	background-color: #ffffff;}
+
+#conte2{
+	width: 20%;
+	margin-left: 25px;
+    margin-right: 35px;
+	height:auto;
+	border-radius: 10px;
+	background-color: #ffffff;}
+
+#categorias{
+	width: 90%;
+	margin-left: 55px;
+    margin-right: 55px;
+	height:350px;
+	border-radius: 10px;
+	padding: 60px;
+	padding-left: 80px;
+	background-color: #ffffff;}
+
+}
+
+
+#boton1{
+  margin-top: 120px;
+  background:#00BFFF;
+  color:#fff;
+  padding:20px;
+  z-index: 50;
+  width: 130px;
+  height: 35px;
+  margin-left: 550px;
+  outline: 2px solid;
+  border:2px;
+}
+
+#boton1:hover{
+  margin-top: 120px;
+  cursor:pointer;
+  background: #0174DF;
+  z-index: 50;
+  width: 130px;
+  height: 35px;
+  margin-left: 550px;
+  outline: 2px solid;
+  border:2px;
+  
+}
+nav {
+
+	display: table;
+	margin: auto;
+	margin-left: 40px;
+	padding-left: 50px;
+	margin-top: 0px;
+	background:#000000;
+	height:70px;
+	z-index:100;
+	width:97%;
+}
+
+nav:hover {
+	
+	display: table;
+	margin: auto;
+	margin-left: 40px;
+	padding-left: 50px;
+	margin-top: 0px;
+	background:#401989;
+	height:70px;
+	z-index:100;
+	width:97%;
+}
+
+h1 {
+  font-size: 3em;
+  color: #000000;
+  margin: 0.3em 0;
+  font-family: 'Princess Sofia', cursive;
+
+
+}
+
+h6 {
+  font-size: 2em;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  font-family: 'Princess Sofia', cursive;
+
+
+}
+
+h5 {
+  font-size: 0.5em;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  font-family: 'Princess Sofia', cursive;
+
+
+}
+
+h4 {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  font-family: 'Princess Sofia', cursive;
+
+
+}
+
+ h2 {
+	font-size: 1em;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  font-family: 'Princess Sofia', cursive;
+
+
+
+	}
+
+#ConteBlanco1  {
+  width: 100%;
+  height: 830px;
+  margin: 0;
+  margin-left: 0px;
+  display: block;
+  background:#ffffff;
+  border-radius: 10px;
+  padding: 0px;
+  padding-top: 65px;
+  
+  
+}
+
+textarea {
+
+
+	height:130px;
+	border-radius:5px;
+}
+
+
+
+/*************************************
+Fallback
+**************************************/
+.no-csstransforms3d .movie .poster, 
+.no-csstransforms3d .movie .info {
+	position: relative;
+}
+
+/*************************************
+Media Queries
+**************************************/
+@media screen and (max-width: 60.75em){
+	.scene {
+		float: none;
+		margin: 30px auto 60px;
+	}
+}

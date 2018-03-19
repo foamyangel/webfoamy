@@ -1,0 +1,66 @@
+<head>
+	<meta charset="UTF-8">
+	<title>efecto scroll en menu</title>
+
+	<link rel="stylesheet" href="style/index_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src='js/script.js'></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/hh.css">
+	<link rel="stylesheet" href="css/slyder.css">
+	<link rel="stylesheet" href="css/style.css">
+   
+    <link href="https://fonts.googleapis.com/css?family=Acme|Oswald" rel="stylesheet">
+  
+
+</head>
+<body id="conte">
+<br>
+<br>
+
+<form action="125.php" method="POST" name="calc" class="fondo1">
+<br>
+<h3>Hoja de Vida</h3>
+
+<h5>Ingrese Sus Datos</h5>
+<br>
+<br>
+<p>Nombre</p> <p>Apellidos</p><br>
+<input type="Text" name="NOMBRE" value="" size="12"> <input type="Text" name="APELLIDOS" value="" size="12">
+<br>
+
+<p>Cedula </p><p>Registro Medico</p><br><br>
+ 
+
+<br>
+<input type="Text" name="CEDULA" value="b" size="12"> <input type="Text" name="REGISTRO_MEDICO" value="" size="12" id="registroMedico" onchange = "validar();"required>
+
+<br>
+<p>Telefono</p><p>Email</p><br><br>
+ 
+
+<br>
+<input type="Text" name="TELEFONO" value="b" size="12"> <input type="Text" name="EMAIL" value="" size="12">
+
+<br>
+<p>Direccion Res</p><p>Especialidad</p><br><br>
+ 
+
+<br>
+<input type="Text" name="DIRECCION_RES" value="b" size="12"> <input type="Text" name="ESPECIALIDAD" value="" size="12">
+
+<p>Nombre del Hospital donde trabaja</p>
+<input type="Text" name="HOSPITAL" value="" size="12">
+<br>
+<br>
+<br>
+<br>
+<br>
+<input type="submit" value="Guardar" id="boton">
+
+
+
+</form>
+
+</body>

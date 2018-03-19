@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto+Mono');
+
+h1{
+text-transform: uppercase;
+color:#444;
+font-family: "Roboto Mono";
+}
+
+h5{
+	font-family:arial;
+	font-size: 20px;
+	line-height:1.5;
+	padding-top: 20px;
+	font-weight: normal; 
+}
+
+.wap{
+	width: 100%;
+	margin: auto;
+	height: auto;
+	background-color:#222;
+	position: center;
+	padding-left: 20px;
+	margin: 30px;
+	overflow: hidden;
+
+	
+}
+
+.bienvenidos{
+	width: 90%;
+	height: auto;
+	background-color:#FFFFFF;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 10px;
+}

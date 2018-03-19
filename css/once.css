@@ -1,0 +1,22 @@
+#bienvenidos1{
+	width: 97%;
+	height: auto;
+	padding:25px;
+	margin-top: 15px;
+	margin-left: 15px;
+	text-align: center;
+	border-radius: 10px;
+	background:rgba(0,0,0,.8);
+	box-sizing: border-box;
+
+}
+
+#bienvenidos2{
+	width: 97%;
+	height: auto;
+	padding:25px;
+	margin:10px;
+	
+	text-align: center;
+	border-radius: 10px;
+	background:rgba(0,0,0,.6);
